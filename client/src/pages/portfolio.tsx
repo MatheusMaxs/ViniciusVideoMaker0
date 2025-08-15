@@ -92,13 +92,7 @@ export default function Portfolio() {
               >
                 Portfólio
               </button>
-              <button
-                onClick={() => scrollToSection('clients')}
-                className="text-notion-secondary hover:text-notion-text transition-colors font-medium"
-                data-testid="link-clients"
-              >
-                Clientes
-              </button>
+              
               <button
                 onClick={() => scrollToSection('contact')}
                 className="text-notion-secondary hover:text-notion-text transition-colors font-medium"
@@ -123,12 +117,7 @@ export default function Portfolio() {
               >
                 Portfólio
               </button>
-              <button
-                onClick={() => scrollToSection('clients')}
-                className="block py-2 text-notion-secondary hover:text-notion-text transition-colors w-full text-left"
-              >
-                Clientes
-              </button>
+              
               <button
                 onClick={() => scrollToSection('contact')}
                 className="block py-2 text-notion-secondary hover:text-notion-text transition-colors w-full text-left"
@@ -224,29 +213,7 @@ export default function Portfolio() {
           </div>
         </div>
       </section>
-      {/* Clients Section */}
-      <section id="clients" className="py-16 px-6">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-notion-text mb-12 text-center" data-testid="text-clients-title">
-            Clientes
-          </h2>
-          
-          {/* Clients Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
-            {['Casa da Suspensão', 'Tecnocar', 'Império do Açaí', 'ACES', 'Extensa Móveis'].map((client, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-xl p-6 shadow-sm border border-notion-border flex items-center justify-center"
-                data-testid={`card-client-${index}`}
-              >
-                <span className="text-notion-secondary font-medium text-center" data-testid={`text-client-name-${index}`}>
-                  {client}
-                </span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      
       {/* Contact Section */}
       <section id="contact" className="py-16 px-6 notion-gray">
         <div className="max-w-4xl mx-auto">
