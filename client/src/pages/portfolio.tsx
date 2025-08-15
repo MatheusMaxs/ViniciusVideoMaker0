@@ -341,7 +341,7 @@ export default function Portfolio() {
                 
                 <button
                   type="submit"
-                  className="w-full bg-notion-text text-white py-3 px-6 rounded-lg hover:bg-black transition-colors font-medium"
+                  className="w-full bg-notion-text text-white py-3 px-6 rounded-lg hover:bg-black transition-colors font-medium sticky bottom-4 z-30 shadow-lg"
                   data-testid="button-submit-form"
                 >
                   Enviar Mensagem
