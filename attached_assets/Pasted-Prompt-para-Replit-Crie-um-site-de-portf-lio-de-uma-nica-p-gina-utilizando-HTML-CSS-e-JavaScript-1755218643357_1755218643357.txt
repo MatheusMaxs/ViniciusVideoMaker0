@@ -1,0 +1,103 @@
+Prompt para Replit
+
+Crie um site de portfólio de uma única página, utilizando HTML, CSS e JavaScript puros (sem frameworks). O site deve ser para um videomaker e ter um design minimalista, moderno, com um tema escuro e totalmente responsivo. A experiência do usuário deve ser direta e sem "mimimi".
+
+Estrutura do Projeto:
+
+index.html (para a estrutura da página)
+
+style.css (para o estilo e layout)
+
+script.js (para a funcionalidade do pop-up do portfólio)
+
+Conteúdo e Layout (HTML):
+
+Header:
+
+No canto superior esquerdo, um título simples: <a href="#home">Vinicius | Videomaker</a>.
+
+No canto superior direito, um menu de navegação com links para as seções: <a href="#portfolio">Portfólio</a> e <a href="#contact">Contato</a>.
+
+Hero Section:
+
+Uma seção com o ID #home.
+
+Título centralizado: <h1>Vinicius | Videomaker</h1>.
+
+Subtítulo: <p>Especialista em conteúdo audiovisual dinâmico e envolvente, conectando marcas e pessoas através de storytelling visual.</p>.
+
+Botão de CTA: <a href="#portfolio" class="cta-button">Ver Portfólio</a>.
+
+Portfolio Section:
+
+Uma seção com o ID #portfolio.
+
+Título: <h2>Portfólio</h2>.
+
+Uma galeria de projetos em uma grade responsiva. Use classes para cada item da galeria.
+
+Crie 5 itens de exemplo. Cada item deve ser uma div clicável que, ao ser clicada, abre um pop-up (modal).
+
+Cada item deve ter uma imagem de miniatura (placeholder) e o nome do cliente (ex: "CASA DA SUSPENSÃO").
+
+Clientes Section:
+
+Uma seção com o ID #clients.
+
+Título: <h2>Clientes</h2>.
+
+Uma fileira de logotipos de clientes (use imagens de placeholder monocromáticas).
+
+Contact Section:
+
+Uma seção com o ID #contact.
+
+Título: <h2>Contato</h2>.
+
+Informações de contato:
+
+Email: euvininascimento1@icloud.com
+
+Instagram: @ovinicciuss
+
+WhatsApp: (66) 99971-6204
+
+Um formulário simples com campos para "Nome", "E-mail" e "Mensagem", e um botão de "Enviar".
+
+Estilo (CSS):
+
+Tema Escuro:
+
+Fundo preto ou cinza escuro.
+
+Texto branco ou cinza claro.
+
+Use uma fonte sem serifa elegante, como 'Poppins' ou 'Montserrat', importada do Google Fonts.
+
+Layout Responsivo:
+
+Use Flexbox ou Grid para organizar as seções e a galeria de portfólio.
+
+A galeria deve exibir 3 colunas em desktop e 1 ou 2 em dispositivos móveis.
+
+Animações e Interatividade:
+
+Transições suaves ao passar o mouse sobre os links e botões.
+
+Estilize o botão CTA e os links de navegação para serem discretos e elegantes.
+
+Funcionalidade (JavaScript):
+
+Implemente a lógica para o pop-up (modal) da galeria de portfólio.
+
+Quando o usuário clica em uma miniatura, o pop-up deve aparecer com um player de vídeo (ex: um iframe de placeholder para YouTube) e o nome do cliente.
+
+O pop-up deve ter um botão de fechar.
+
+A página principal deve ser escurecida e não clicável enquanto o pop-up estiver aberto.
+
+Requisitos Finais:
+
+Adicione comentários explicativos em todo o código HTML, CSS e JavaScript para facilitar a compreensão.
+
+Use nomes de classes e IDs semânticos e descritivos.
