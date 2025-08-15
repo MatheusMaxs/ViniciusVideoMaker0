@@ -143,15 +143,6 @@ export default function Portfolio() {
       {/* Hero Section */}
       <section id="home" className="pt-24 pb-16 px-6">
         <div className="max-w-6xl mx-auto">
-          {/* Hero Banner Image */}
-          <div className="relative mb-8 rounded-2xl overflow-hidden shadow-lg">
-            <img
-              src="https://swift-character-fcf.notion.site/image/attachment%3A05efafb1-a865-4f59-a952-bb5b9cfdfae9%3AUntitled_design.png?table=block&id=23351d14-517f-807b-9f56-f4c5e6e88592&spaceId=1cb51d14-517f-81cc-af2d-000351e8f208&width=2000&userId=&cache=v2"
-              alt="Vinicius Videomaker Hero Banner"
-              className="w-full h-64 md:h-80 object-cover"
-              data-testid="img-hero-banner"
-            />
-          </div>
           
           {/* Profile Section */}
           <div className="bg-white rounded-2xl p-8 shadow-sm border border-notion-border">
@@ -191,19 +182,14 @@ export default function Portfolio() {
       {/* Portfolio Section */}
       <section id="portfolio" className="py-16 px-6 notion-gray">
         <div className="max-w-6xl mx-auto">
-          {/* Portfolio Header Image */}
-          <div className="mb-8">
-            <img
-              src="https://swift-character-fcf.notion.site/image/attachment%3Abd66005d-098a-4e61-b18d-aba33d081422%3APORTFOLIO.png?table=block&id=23451d14-517f-8023-9eea-d756a15e6e83&spaceId=1cb51d14-517f-81cc-af2d-000351e8f208&width=2000&userId=&cache=v2"
-              alt="Portfolio Header"
-              className="w-full h-32 md:h-48 object-cover rounded-2xl shadow-lg"
-              data-testid="img-portfolio-header"
-            />
+          {/* Portfolio Header */}
+          <div className="mb-12">
+            <div className="bg-black rounded-2xl py-12 px-8 text-center shadow-lg">
+              <h2 className="text-4xl md:text-5xl font-bold text-white tracking-wide" data-testid="text-portfolio-title">
+                PORTFÓLIO
+              </h2>
+            </div>
           </div>
-
-          <h2 className="text-3xl font-bold text-notion-text mb-12 text-center" data-testid="text-portfolio-title">
-            Portfólio
-          </h2>
           
           {/* Portfolio Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -268,19 +254,14 @@ export default function Portfolio() {
       {/* Contact Section */}
       <section id="contact" className="py-16 px-6 notion-gray">
         <div className="max-w-4xl mx-auto">
-          {/* Contact Header Image */}
-          <div className="mb-8">
-            <img
-              src="https://swift-character-fcf.notion.site/image/attachment%3A010837a7-cd4f-4cc0-8577-4bda64dcbfaa%3APORTFOLIO.png?table=block&id=23451d14-517f-8045-9f63-ff126b236174&spaceId=1cb51d14-517f-81cc-af2d-000351e8f208&width=2000&userId=&cache=v2"
-              alt="Contact Header"
-              className="w-full h-32 md:h-48 object-cover rounded-2xl shadow-lg"
-              data-testid="img-contact-header"
-            />
+          {/* Contact Header */}
+          <div className="mb-12">
+            <div className="bg-black rounded-2xl py-12 px-8 text-center shadow-lg">
+              <h2 className="text-4xl md:text-5xl font-bold text-white tracking-wide" data-testid="text-contact-title">
+                CONTATO
+              </h2>
+            </div>
           </div>
-
-          <h2 className="text-3xl font-bold text-notion-text mb-12 text-center" data-testid="text-contact-title">
-            Contato
-          </h2>
           
           <div className="grid md:grid-cols-2 gap-8">
             {/* Contact Information */}
