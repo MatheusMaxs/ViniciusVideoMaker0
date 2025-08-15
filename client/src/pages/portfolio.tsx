@@ -194,7 +194,7 @@ export default function Portfolio() {
                     className="w-full h-48 object-cover"
                     data-testid={`img-project-${index}`}
                   />
-                  <div className="absolute inset-0 bg-black/20 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+                  <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
                     <div className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center">
                       <Play className="w-6 h-6 text-notion-text" />
                     </div>
