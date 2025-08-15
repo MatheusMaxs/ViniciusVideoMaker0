@@ -251,7 +251,7 @@ export default function Portfolio() {
       </section>
       {/* Contact Section */}
       <section id="contact" className="py-16 px-6 notion-gray bg-[#ffffff]">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           {/* Contact Header */}
           <div className="mb-12">
             <div className="bg-black rounded-2xl py-12 px-8 text-center shadow-lg">
