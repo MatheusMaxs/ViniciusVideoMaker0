@@ -139,7 +139,6 @@ export default function Portfolio() {
           )}
         </div>
       </nav>
-
       {/* Hero Section */}
       <section id="home" className="pt-24 pb-16 px-6">
         <div className="max-w-6xl mx-auto">
@@ -178,9 +177,8 @@ export default function Portfolio() {
           </div>
         </div>
       </section>
-
       {/* Portfolio Section */}
-      <section id="portfolio" className="py-16 px-6 notion-gray">
+      <section id="portfolio" className="py-16 px-6 notion-gray bg-[#ffffff] pt-[0px] pb-[0px]">
         <div className="max-w-6xl mx-auto">
           {/* Portfolio Header */}
           <div className="mb-12">
@@ -226,7 +224,6 @@ export default function Portfolio() {
           </div>
         </div>
       </section>
-
       {/* Clients Section */}
       <section id="clients" className="py-16 px-6">
         <div className="max-w-6xl mx-auto">
@@ -250,7 +247,6 @@ export default function Portfolio() {
           </div>
         </div>
       </section>
-
       {/* Contact Section */}
       <section id="contact" className="py-16 px-6 notion-gray">
         <div className="max-w-4xl mx-auto">
@@ -389,7 +385,6 @@ export default function Portfolio() {
           </div>
         </div>
       </section>
-
       {/* Portfolio Modal */}
       {selectedProject && (
         <PortfolioModal
