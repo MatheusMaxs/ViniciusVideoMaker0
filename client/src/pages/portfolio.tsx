@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Instagram, MessageCircle, Play, Menu, X, ChevronDown } from 'lucide-react';
+import { Mail, Instagram, MessageCircle, Play, Menu, X, ChevronDown, FolderOpen } from 'lucide-react';
 import { PortfolioModal } from '@/components/ui/modal';
 
 export default function Portfolio() {
@@ -12,31 +12,41 @@ export default function Portfolio() {
       client: 'CASA DA SUSPENSÃO',
       category: 'Serviços Automotivos',
       image: 'https://swift-character-fcf.notion.site/image/attachment%3A5ccb5a70-f638-4d43-80a6-19db123b7dbe%3AIMG_6004.jpeg?id=24d51d14-517f-808d-9ef1-dfc159772eae&table=block&spaceId=1cb51d14-517f-81cc-af2d-000351e8f208&width=520&userId=&cache=v2',
-      description: 'Produção audiovisual para empresa especializada em serviços automotivos, focando na qualidade e profissionalismo dos serviços oferecidos.'
+      description: 'Produção audiovisual para empresa especializada em serviços automotivos, focando na qualidade e profissionalismo dos serviços oferecidos.',
+      driveLink: 'https://drive.google.com/drive/folders/casasuspensao',
+      instagramLink: 'https://instagram.com/casadasuspensao'
     },
     {
       client: 'TECNOCAR',
       category: 'Tecnologia Automotiva',
       image: 'https://swift-character-fcf.notion.site/image/attachment%3Ad827d851-f35a-4c5d-b38e-e2fa94440c41%3A88380948-bb61-48e2-97d7-8bda345bf245.jpeg?id=24d51d14-517f-8036-8f86-faeec14749d2&table=block&spaceId=1cb51d14-517f-81cc-af2d-000351e8f208&width=520&userId=&cache=v2',
-      description: 'Conteúdo dinâmico para empresa de tecnologia automotiva, destacando inovação e modernidade no setor.'
+      description: 'Conteúdo dinâmico para empresa de tecnologia automotiva, destacando inovação e modernidade no setor.',
+      driveLink: 'https://drive.google.com/drive/folders/tecnocar',
+      instagramLink: 'https://instagram.com/tecnocar'
     },
     {
       client: 'IMPÉRIO DO AÇAÍ',
       category: 'Alimentação Saudável',
       image: 'https://swift-character-fcf.notion.site/image/attachment%3A22be7a59-58ec-44df-bb4e-1afb6ce15ba3%3AIMG_6434.jpeg?id=24d51d14-517f-8089-a96b-d897863385b3&table=block&spaceId=1cb51d14-517f-81cc-af2d-000351e8f208&width=520&userId=&cache=v2',
-      description: 'Vídeos promocionais para rede de açaí, enfatizando produtos saudáveis e naturais.'
+      description: 'Vídeos promocionais para rede de açaí, enfatizando produtos saudáveis e naturais.',
+      driveLink: 'https://drive.google.com/drive/folders/imperioacai',
+      instagramLink: 'https://instagram.com/imperioacai'
     },
     {
       client: 'ACES',
       category: 'Educação e Treinamento',
       image: 'https://swift-character-fcf.notion.site/image/attachment%3A84b3ce77-dd47-4193-a60d-9332466551f3%3AIMG_6431.jpeg?id=24d51d14-517f-80f2-b56f-c8deb60aeb74&table=block&spaceId=1cb51d14-517f-81cc-af2d-000351e8f208&width=520&userId=&cache=v2',
-      description: 'Material audiovisual educacional para instituição de ensino, promovendo excelência em educação.'
+      description: 'Material audiovisual educacional para instituição de ensino, promovendo excelência em educação.',
+      driveLink: 'https://drive.google.com/drive/folders/aces',
+      instagramLink: 'https://instagram.com/aces'
     },
     {
       client: 'EXTENSA MÓVEIS',
       category: 'Design de Interiores',
       image: 'https://swift-character-fcf.notion.site/image/attachment%3A19662d79-f129-4ac4-a488-3a0a0fb4e29d%3AIMG_6428.jpeg?id=24d51d14-517f-80fd-894f-eb1d1b3e9d81&table=block&spaceId=1cb51d14-517f-81cc-af2d-000351e8f208&width=520&userId=&cache=v2',
-      description: 'Showcase de produtos e ambientes para loja de móveis, destacando design e funcionalidade.'
+      description: 'Showcase de produtos e ambientes para loja de móveis, destacando design e funcionalidade.',
+      driveLink: 'https://drive.google.com/drive/folders/extensamoveis',
+      instagramLink: 'https://instagram.com/extensamoveis'
     }
   ];
 
@@ -204,9 +214,35 @@ export default function Portfolio() {
                   <h3 className="font-semibold text-notion-text text-lg" data-testid={`text-project-title-${index}`}>
                     {project.client}
                   </h3>
-                  <p className="text-notion-secondary text-sm mt-2" data-testid={`text-project-category-${index}`}>
+                  <p className="text-notion-secondary text-sm mt-2 mb-4" data-testid={`text-project-category-${index}`}>
                     {project.category}
                   </p>
+                  
+                  {/* Social Links */}
+                  <div className="flex space-x-3 mt-4">
+                    <a
+                      href={project.driveLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center w-10 h-10 bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors"
+                      onClick={(e) => e.stopPropagation()}
+                      data-testid={`link-drive-${index}`}
+                      title="Google Drive"
+                    >
+                      <FolderOpen className="w-5 h-5 text-notion-secondary" />
+                    </a>
+                    <a
+                      href={project.instagramLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center w-10 h-10 bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors"
+                      onClick={(e) => e.stopPropagation()}
+                      data-testid={`link-instagram-${index}`}
+                      title="Instagram"
+                    >
+                      <Instagram className="w-5 h-5 text-notion-secondary" />
+                    </a>
+                  </div>
                 </div>
               </div>
             ))}
