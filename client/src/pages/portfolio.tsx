@@ -165,7 +165,7 @@ export default function Portfolio() {
                 </p>
                 <button
                   onClick={() => scrollToSection('portfolio')}
-                  className="inline-flex items-center px-6 py-3 text-white rounded-lg hover:bg-gray-900 transition-colors font-medium bg-[#000000]"
+                  className="inline-flex items-center px-6 py-3 text-white rounded-lg hover:bg-[#0d0d0d] transition-colors font-medium bg-[#000000]"
                   data-testid="button-view-portfolio"
                 >
                   Ver Portfólio
@@ -377,7 +377,7 @@ export default function Portfolio() {
                 
                 <button
                   type="submit"
-                  className="w-full text-white py-3 px-6 rounded-lg hover:bg-gray-900 transition-colors font-medium bg-[#000000]"
+                  className="w-full text-white py-3 px-6 rounded-lg hover:bg-[#0d0d0d] transition-colors font-medium bg-[#000000]"
                   data-testid="button-submit-form"
                 >
                   Enviar Mensagem
